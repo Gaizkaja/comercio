@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html id="pagTienda" ng-app='miApp'>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Logo y titulo en la pestaña-->
+    <link rel="icon" href="view/img/logo2.jpg" type="image/png">
+    <title>Ayuntamiento de Falces</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="view/css/bootstrap.min.css">
+    <!--Nuestro css-->
+    <link rel="stylesheet" href="view/css/index.css">
+    <link rel="stylesheet" href="view/css/main.css">
+    <link rel="stylesheet" href="view/css/tienda1.css">
+    <!--Librería Owl Carousel ccs-->
+    <link rel="stylesheet" href="view/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="view/css/owl.theme.default.min.css" />
+
+
+</head>
+
+<body ng-controller="miControlador">
+    <header id="header">
+
+        <!-- Navbar -->
+        <nav class="main_nav w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="main_nav_content d-flex flex-row">
+
+                            <div class="cat_menu_container">
+                                <div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+                                    <div class="cat_burger"><span></span><span></span><span></span></div>
+                                    <div class="cat_menu_text">categories</div>
+                                </div>
+                                <ul class="cat_menu">
+                                    <li><a href="#">Computers &amp; Laptops <i class="fas fa-chevron-right ml-auto"></i></a>
+                                    </li>
+                                    
+                                    <li><a href="#">Smartphones Tablets</i></a>
+                                    </li>
+                                    <li><a href="#">TV &amp; Audio<i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Gadgets<i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="#">Car Electronics<i class="fas fa-chevron-right"></i></a></li>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="main_nav_menu ml-auto">
+                                <ul class="standard_dropdown main_nav_dropdown">
+                                    <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
+                                    <li class="hassubs">
+                                        <a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a>
+                                    </li>
+                                    <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                                    <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menu_trigger_container ml-auto">
+                                <div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+                                    <div class="menu_burger">
+                                        <div class="menu_trigger_text">menu</div>
+                                        <div class="cat_burger menu_burger_inner">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner_background" style="background-image:url(view/img/banner_background.jpg)"></div>
+            <div class="container fill_height">
+                <div class="row fill_height">
+                    <div class="banner_product_image"><img src="view/img/banner.png" alt=""></div>
+                    <div class="col-lg-5 offset-lg-4 fill_height">
+                        <div class="banner_content">
+                            <h1 class="banner_text">new era of smartphones</h1>
+                            <div class="banner_price"><span>$530</span>$460</div>
+                            <div class="banner_product_name">Apple Iphone 6s</div>
+                            <div class="button banner_button"><a href="#shop">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banners -->
+        <div class="characteristics">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 char_col">
+                        <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                            <div class="char_icon"><img src="view/img/char_1.png" alt=""></div>
+                            <div class="char_content">
+                                <div class="char_title">Envío Gratuito</div>
+                                <div class="char_subtitle">desde 50€</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 char_col">
+                        <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                            <div class="char_icon"><img src="view/img/char_2.png" alt=""></div>
+                            <div class="char_content">
+                                <div class="char_title">Productos reacondicionados</div>
+                                <div class="char_subtitle">Todo tipo de producto</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 char_col">
+                        <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                            <div class="char_icon"><img src="view/img/char_3.png" alt=""></div>
+                            <div class="char_content">
+                                <div class="char_title">Reembolso disponible</div>
+                                <div class="char_subtitle">Un mes para hacerlo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 char_col">
+                        <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                            <div class="char_icon"><img src="view/img/char_4.png" alt=""></div>
+                            <div class="char_content">
+                                <div class="char_title">Descuentos frecuentes</div>
+                                <div class="char_subtitle">Todos los meses</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Categorias Populares -->
+        <div class="popular_categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="popular_categories_content">
+                            <div class="popular_categories_title">Categorias Populares</div>
+                            <div class="popular_categories_link"><a href="#shop">Catalogo Completo</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="popular_categories_slider_container">
+                            <div class="owl-carousel owl-theme popular_categories_slider owl-loaded owl-drag">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-1017px, 0px, 0px); transition: all 0s ease 0s; width: 2543px;">
+                                        <div class="owl-item cloned" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_1.png" alt=""></div>
+                                                    <div class="popular_category_text">Smartphones & Tablets</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="owl-item" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_1.png" alt=""></div>
+                                                    <div class="popular_category_text">Smartphones & Tablets</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_2.png" alt=""></div>
+                                                    <div class="popular_category_text">Computers & Laptops</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_3.png" alt=""></div>
+                                                    <div class="popular_category_text">Gadgets</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_4.png" alt=""></div>
+                                                    <div class="popular_category_text">Video Games & Consoles</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_5.png" alt=""></div>
+                                                    <div class="popular_category_text">Accesorios</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_1.png" alt=""></div>
+                                                    <div class="popular_category_text">Smartphones & Tablets</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_2.png" alt=""></div>
+                                                    <div class="popular_category_text">Ordenadores &amp; Portatiles</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_3.png" alt=""></div>
+                                                    <div class="popular_category_text">Gadgets</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_4.png" alt=""></div>
+                                                    <div class="popular_category_text">Juegos &amp; Consolas</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 169.5px;">
+                                            <div class="owl-item">
+                                                <div
+                                                    class="popular_category d-flex flex-column align-items-center justify-content-center">
+                                                    <div class="popular_category_image"><img
+                                                            src="view/img/popular_5.png" alt=""></div>
+                                                    <div class="popular_category_text">Accesorios</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner 2 -->
+        <div class="banner_2 ">
+            <div class="banner_2_background " style="background-image:url(view/img/banner_2_background.jpg)"></div>
+               <div class="owl-carousel owl-theme owl-loaded container">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-3038px, 0px, 0px); transition: all 0s ease 0s; width: 10635px;">
+                            <div class="owl-item cloned" style="width: 1519.2px;">
+                                <div class="owl-item">
+                                    <div class="banner_2_item">
+                                        <div class="container fill_height">
+                                            <div class="row fill_height">
+                                                <div class="col-lg-4 col-md-6 fill_height">
+                                                    <div class="banner_2_content">
+                                                        <div class="banner_2_category">Portatil</div>
+                                                        <div class="banner_2_title">MacBook Air 13</div>
+                                                        <div class="banner_2_text">Primeras Marcas.</div>
+                                                        
+                                                        <div class="button banner_2_button"><a href="#">Explorar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-6 fill_height">
+                                                    <div class="banner_2_image_container">
+                                                        <div class="banner_2_image"><img
+                                                                src="view/img/banner_2_product.png" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 1519.2px;">
+                                <div class="owl-item">
+                                    <div class="banner_2_item">
+                                        <div class="container fill_height">
+                                            <div class="row fill_height">
+                                                <div class="col-lg-4 col-md-6 fill_height">
+                                                    <div class="banner_2_content">
+                                                        <div class="banner_2_category">Laptops</div>
+                                                        <div class="banner_2_title">MacBook Air 13</div>
+                                                        <div class="banner_2_text">Primeras Marcas.</div>
+                                                        
+                                                        <div class="button banner_2_button"><a href="#">Explorar</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-6 fill_height">
+                                                    <div class="banner_2_image_container">
+                                                        <div class="banner_2_image"><img
+                                                                src="view/img/banner_2_product.png" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 1519.2px;">
+                                <div class="owl-item">
+                                    <div class="banner_2_item">
+                                        <div class="container fill_height">
+                                            <div class="row fill_height">
+                                                <div class="col-lg-4 col-md-6 fill_height">
+                                                    <div class="banner_2_content">
+                                                        <div class="banner_2_category">Portatil</div>
+                                                        <div class="banner_2_title">MacBook Air 13</div>
+                                                        <div class="banner_2_text">Lorem ipsum dolor sit amet,
+                                                            consectetur
+                                                            adipiscing elit. Maecenas fermentum laoreet.</div>
+                                                        
+                                                        <div class="button banner_2_button"><a href="#">Explore</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-6 fill_height">
+                                                    <div class="banner_2_image_container">
+                                                        <div class="banner_2_image"><img
+                                                                src="view/img/banner_2_product.png" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brands -->
+        <div class="brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="brands_slider_container">
+
+                            <div class="owl-carousel owl-theme brands_slider owl-loaded owl-drag" style="padding-top:50px;">
+
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-1579px, 0px, 0px); transition: all 0.25s ease 0s; width: 2952px;">
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_1.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_2.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_3.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_4.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_5.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_6.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_7.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_8.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_1.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_2.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_3.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_4.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_5.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_6.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_7.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_8.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_1.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_2.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_3.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_4.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_5.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned active" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_6.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_7.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: auto; margin-right: 42px;">
+                                            <div class="owl-item">
+                                                <div class="brands_item d-flex flex-column justify-content-center"><img
+                                                        src="https://preview.colorlib.com/theme/onetech/images/brands_8.jpg"
+                                                        alt="" style="opacity: 1;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Shop -->
+        <h2 id="shop">Tienda</h2>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row productos p-4 m-3">
+                  <div class="card" style="width: 18rem;" ng-repeat="item in lista">
+                    <img src="view/img/espinacas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.nombre}}</h5>
+                      <p class="card-text">{{item.apellido1}}</p>
+                      <p class="card-text">Procedencia {{item.apellido2}} </p>
+                      <a href="#" class="btn btn-secondary">{{item.ciclo}}€</a>
+                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="carousel-item">
+                <div class="row productos p-4 m-3">
+                  <div class="card" style="width: 18rem;" ng-repeat="item in lista">
+                    <img src="view/img/espinacas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.nombre}}</h5>
+                      <p class="card-text">{{item.apellido1}}</p>
+                      <p class="card-text">Procedencia {{item.apellido2}} </p>
+                      <a href="#" class="btn btn-secondary">{{item.ciclo}}€</a>
+                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row productos p-4 m-3">
+                  <div class="card" style="width: 18rem;" ng-repeat="item in lista">
+                    <img src="view/img/espinacas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.nombre}}</h5>
+                      <p class="card-text">{{item.apellido1}}</p>
+                      <p class="card-text">Procedencia {{item.apellido2}} </p>
+                      <a href="#" class="btn btn-secondary">{{item.ciclo}}€</a>
+                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row productos p-4 m-3">
+                  <div class="card" style="width: 18rem;" ng-repeat="item in lista">
+                    <img src="view/img/espinacas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.nombre}}</h5>
+                      <p class="card-text">{{item.apellido1}}</p>
+                      <p class="card-text">Procedencia {{item.apellido2}} </p>
+                      <a href="#" class="btn btn-secondary">{{item.ciclo}}€</a>
+                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row productos p-4 m-3">
+                  <div class="card" style="width: 18rem;" ng-repeat="item in lista">
+                    <img src="view/img/espinacas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.nombre}}</h5>
+                      <p class="card-text">{{item.apellido1}}</p>
+                      <p class="card-text">Procedencia {{item.apellido2}} </p>
+                      <a href="#" class="btn btn-secondary">{{item.ciclo}}€</a>
+                      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+
+                    </div>
+                    <div class="product_extras">
+                        <div class="product_color">
+                        <input type="radio" checked="" name="product_color" style="background:#b19c83" tabindex="0">
+                        <input type="radio" name="product_color" style="background:#000000" tabindex="0">
+                        <input type="radio" name="product_color" style="background:#999999" tabindex="0">
+                        </div>
+                        <button class="product_cart_button" tabindex="0">Add to Cart</button>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!--Pie de texto-->
+        <div id="pietxt">
+            AYUNTAMIENTO DE FALCES &nbsp; · &nbsp; PLAZA DE LOS FUEROS, 11 &nbsp; · &nbsp; 31370 FALCES (NAVARRA) &nbsp;
+            · &nbsp; T: 948 734 072 &nbsp; · &nbsp; E-MAIL: <a href="mailto:ayto@falces.org" target="_blank"
+                style="color: #fff;">AYTO@FALCES.ORG</a>
+        </div>
+
+        <!--Footer-->
+        <footer id="footer" class="footer footer-dark footer-footer-classic">
+            <div class=" container">
+                <div class="inner">
+                    <!-- Text -->
+                    <p class="copyright subpixel">
+                        <a href="http://www.falces.org/aviso-legal/">Aviso Legal</a> &nbsp; · &nbsp; <a
+                            href="http://www.falces.org/politica-de-cookies/">Política de cookies</a> &nbsp; · &nbsp;
+                        ¡Síguenos! &nbsp; <a href="http://instagram.com/ayuntamientofalces" target="_blank"><img
+                                src="http://www.falces.org/2020/wp-content/uploads/2020/02/instablack.png"></a> &nbsp;
+                        <a href="https://www.facebook.com/FalcesalDia/" target="_blank"><img
+                                src="http://www.falces.org/2020/wp-content/uploads/2020/02/faceblack.png"></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--Fin footer-->
+
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- POPPER -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <!-- BOOTSTRAP JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+
+        <!--Librería Owl Carousel js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"></script>
+
+        <!-- Nuestro JavaScript -->
+        <script src="view/js/angular.min.js" type="text/javascript"></script>
+        <script src="view/js/script.js" type="text/javascript"></script>
+        <script src="view/js/owl.carousel.js" type="text/javascript"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+            </script>
+</body>
+</html>
